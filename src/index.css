@@ -45,7 +45,7 @@ a{text-decoration: none;}
 }
 
 img.small {
-  max-height: 4rem;
+  max-height: 16rem;
 }
 
 button {
@@ -55,7 +55,7 @@ button {
   border-radius: 0.2rem;
   border: 0.1rem #404040 solid;
   background-color: rgb(220, 225, 228);
-  width: 6rem;
+  width: 80%;
   cursor: pointer;
 }
 
