@@ -16,7 +16,7 @@ export default function Header(props) {
           {countCartItems ? (
             <button className="badge">{countCartItems}</button>
           ) : (
-            ""
+            "Empty"
           )}
         </a>
       </div>

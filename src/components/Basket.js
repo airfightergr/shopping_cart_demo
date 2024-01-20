@@ -7,7 +7,7 @@ export default function Basket(props) {
 
   const taxPrice = itemsPrice * 0.24;
 
-  const shippingPrice = itemsPrice > 2000 ? 0 : 50;
+  const shippingPrice = itemsPrice > 500 ? 0 : 15;
 
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
 
@@ -27,7 +27,7 @@ export default function Basket(props) {
             </button>
           </div>
           <div className="col-2 text-right">
-            {item.qty} x ${item.price.toFixed(2)}
+            {item.qty} x €{item.price.toFixed(2)}
           </div>
         </div>
       ))}
@@ -37,27 +37,27 @@ export default function Basket(props) {
           <hr></hr>
           <div className="row">
             <div className="col-2">Items Price</div>
-            <div className="col-1 text-right">${itemsPrice.toFixed(2)}</div>
+            <div className="col-1 text-right">€{itemsPrice.toFixed(2)}</div>
           </div>
           <div className="row">
-            <div className="col-2">Tax Price</div>
-            <div className="col-1 text-right">${taxPrice.toFixed(2)}</div>
+            <div className="col-2">V.A.T.</div>
+            <div className="col-1 text-right">€{taxPrice.toFixed(2)}</div>
           </div>
           <div className="row">
             <div className="col-2">Shipping Price</div>
-            <div className="col-1 text-right">${shippingPrice.toFixed(2)}</div>
+            <div className="col-1 text-right">€{shippingPrice.toFixed(2)}</div>
           </div>
           <div className="row">
             <div className="col-2">
               <strong>Total Price</strong>
             </div>
             <div className="col-1 text-right">
-              <strong>${totalPrice.toFixed(2)}</strong>
+              <strong>€{totalPrice.toFixed(2)}</strong>
             </div>
           </div>
           <hr></hr>
           <div className="row">
-            <button_checkout onClick={() => alert("Impement Checkout")}>
+            <button_checkout onClick={() => alert("Thanks for your Purchase!")}>
               Checkout
             </button_checkout>
           </div>
