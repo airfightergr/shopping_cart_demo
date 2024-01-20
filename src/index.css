@@ -88,6 +88,13 @@ button.badge {
   width: 1.5rem;
 }
 
+button.badge_empty {
+  background-color: #40def0;
+  border: none;
+  color: #ffffff;
+  width: 1.5rem;
+}
+
 .text-right {
   text-align: right;
 }
